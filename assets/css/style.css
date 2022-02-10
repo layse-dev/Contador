@@ -41,9 +41,15 @@ h1 {
     font-size: 50px;
 }
 
+.description {
+    margin-bottom: 10px;
+}
+
 p {
     margin-bottom: 3em;
     color: #ea8ecd;
+    
+    text-align: center;
 }
 
 #counter {
@@ -69,4 +75,13 @@ button {
 #currentNumber {
     font-size: 60px;
     padding: 0 20px;
+}
+
+@media screen and (max-width: 500px) {
+    .container {
+        width: 400px;
+    }
+    
+    h1 {font-size: 40px;}
+    p {font-size: 13px;}
 }
