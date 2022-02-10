@@ -27,22 +27,15 @@ body{
     justify-content: center;
     align-items: center;
 
-    width: 500px;
-    height: 350px;
     border-radius: 10px;
-    border: 3px solid rgba(255, 255, 255, .5);
-    background-color: rgba(79, 24, 106, 0.5);
     box-sizing: border-box;
 }
 
 h1 {
-    margin-bottom: 10px;
-
+    margin: 0;
+    margin-bottom: 6px;
     font-size: 50px;
-}
-
-.description {
-    margin-bottom: 10px;
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
 }
 
 p {
@@ -56,6 +49,13 @@ p {
     display: flex;
     justify-content: center;
     align-items: center;
+
+    width: 300px;
+    height: 300px;
+
+    border-radius: 100%;
+    border: 5px double rgba(255, 255, 255, .5);
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.5), inset 0 0 10px rgba(255, 255, 255, 0.5);
 }
 
 button {
@@ -63,34 +63,46 @@ button {
     height: 40px;
 
     color: #fff;
-    font-size: 20pt;
+    font-size:35pt;
     font-weight: 500;
-    background-color: rgba(255, 0, 225, .5);
+    background: none;
 
     border: 0;
     border-radius: 100%;
     cursor: pointer;
 
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 i {
-    color: white;
+    color: rgba(255, 0, 225, 1);
+    text-shadow: 0 0 10px rgba(255, 0, 225, .5);
 }
 
 #currentNumber {
     margin: 0 10px;
-}
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
 
-#currentNumber {
     font-size: 60px;
     padding: 0 20px;
 }
 
 @media screen and (max-width: 500px) {
-    .container {
-        width: 400px;
-    }
-    
     h1 {font-size: 40px;}
     p {font-size: 13px;}
+
+    #counter {
+        width: 250px;
+        height: 250px;
+    }
+
+    #currentNumber {
+        font-size: 50px;
+    }
+
+    buttom{
+        font-size: 25pt;
+    }
 }
