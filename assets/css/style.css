@@ -41,6 +41,7 @@ h1 {
 p {
     margin-bottom: 3em;
     color: #ea8ecd;
+    text-align: center;
 }
 
 #counter {
